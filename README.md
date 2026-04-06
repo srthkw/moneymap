@@ -95,7 +95,7 @@ src/
 ### 1. Clone the repository
 
 ```
-git clone <your-repo-link>
+git clone https://github.com/srthkw/moneymap
 ```
 
 ### 2. Install dependencies
@@ -141,12 +141,18 @@ npm run dev
 
 ## 📷 Screenshots
 
-> Add screenshots of:
->
-> * Dashboard
-> * Transactions
-> * Charts
-> * Insights
+### Dashboard
+![Dashboard](public/Dashboard_light.jpeg)
+
+![Dashboard](public/Dashboard_dark.jpeg)
+
+![Insights](public/Insights_light1.jpeg)
+
+![Insights](public/Insights_light2.jpeg)
+
+![insights](public/Insights_dark1.jpeg)
+
+![insights](public/Insights_dark2.jpeg)
 
 ---
 

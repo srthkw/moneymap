@@ -79,7 +79,7 @@ const Sidebar = ({ setSidebarOpen }) => {
                         <NavLink to="/insights" className={({ isActive }) =>
                             isActive ? `${theme === "light" ? "bg-gray-200 rounded-2xl" : "bg-gray-700 rounded-2xl"}` : ""}>
                             <li className={`cursor-pointer w-full py-2 px-5 flex items-center gap-2`}>
-                                <span className="text-2xl"><LuChartPie /></span><span>Analytics</span>
+                                <span className="text-2xl"><LuChartPie /></span><span>Insights</span>
                             </li></NavLink>
                     </ul>
                 </div>

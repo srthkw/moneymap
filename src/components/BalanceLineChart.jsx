@@ -54,29 +54,70 @@ const BalanceLineChart = () => {
     ];
 
     return (
-        <div className={`flex flex-col items-center justify-center max-w-4xl mx-auto p-5 py-20 border-x ${theme === "light" ? "text-cyan-800 bg-white border-gray-200" : "text-gray-400 border-gray-700"}`}>
-            <h2 className={`text-2xl font-bold mb-8 ${theme === "light" ? "text-cyan-800" : "text-gray-200"} flex items-center gap-3`}>
-                <span>
-                    <LuChartColumn />
-                </span>
-                <span>
-                    Balance Trend
-                </span>
-            </h2>
+<div className={`rounded-xl ${theme === "light" ? "bg-white border border-gray-100" : "bg-gray-800 border border-gray-700"} max-w-4xl mx-auto my-4 overflow-hidden`}>
+  
+  {/* Simple Header */}
+  <div className={`flex items-center justify-between p-4 ${theme === "light" ? "border-b border-gray-100" : "border-b border-gray-700"}`}>
+    <div className="flex items-center gap-2">
+      <LuChartColumn className={`w-5 h-5 ${theme === "light" ? "text-teal-600" : "text-teal-400"}`} />
+      <h3 className={`font-semibold ${theme === "light" ? "text-gray-800" : "text-gray-200"}`}>Balance Trend</h3>
+    </div>
+    {data && data.length > 0 && (
+      <div className={`text-sm font-medium ${theme === "light" ? "text-gray-600" : "text-gray-400"}`}>
+        ₹{data[data.length - 1]?.balance?.toLocaleString()}
+      </div>
+    )}
+  </div>
 
-            <div className={`w-full pr-5`}>
-                <ResponsiveContainer width="100%" height={220}>
-                    <LineChart width={800} height={300} data={data}>
-                        <CartesianGrid strokeDasharray="3 3" />
-                        <XAxis dataKey="date" fontSize={fontSize} />
-                        <YAxis tickCount={5} fontSize={fontSize} />
-                        <Tooltip formatter={(value) => `₹${value}`} contentStyle={{ fontSize: `${fontSize}px` }}
-                            labelStyle={{ fontSize: `${fontSize}px` }} />
-                        <Line type="monotone" dataKey="balance" stroke="#00C49F" strokeWidth={3} dot={{ r: isMobile ? 2 : 4 }} />
-                    </LineChart>
-                </ResponsiveContainer>
-            </div>
-        </div>
+  {/* Chart */}
+  <div className="p-4">
+    {data && data.length > 0 ? (
+      <ResponsiveContainer width="100%" height={250}>
+        <LineChart data={data}>
+          <CartesianGrid 
+            strokeDasharray="3 3" 
+            stroke={theme === "light" ? "#f0f0f0" : "#374151"} 
+            vertical={false}
+          />
+          <XAxis 
+            dataKey="date" 
+            fontSize={fontSize || 11}
+            tick={{ fill: theme === "light" ? "#9ca3af" : "#6b7280" }}
+            tickLine={false}
+            axisLine={false}
+          />
+          <YAxis 
+            hide
+          />
+          <Tooltip 
+            formatter={(value) => `₹${value.toLocaleString()}`}
+            contentStyle={{
+              backgroundColor: theme === "light" ? "white" : "#1f2937",
+              border: "none",
+              borderRadius: "6px",
+              fontSize: `${fontSize || 11}px`,
+            }}
+          />
+          <Line 
+            type="monotone" 
+            dataKey="balance" 
+            stroke="#00C49F" 
+            strokeWidth={2.5}
+            dot={{ r: isMobile ? 2 : 3 }}
+            activeDot={{ r: isMobile ? 4 : 5 }}
+          />
+        </LineChart>
+      </ResponsiveContainer>
+    ) : (
+      <div className="text-center py-8">
+        <LuChartColumn className={`w-10 h-10 mx-auto mb-2 ${theme === "light" ? "text-gray-300" : "text-gray-600"}`} />
+        <p className={`text-sm ${theme === "light" ? "text-gray-400" : "text-gray-500"}`}>
+          No trend data available
+        </p>
+      </div>
+    )}
+  </div>
+</div>
     );
 };
 
