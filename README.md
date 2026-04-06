@@ -142,17 +142,9 @@ npm run dev
 ## 📷 Screenshots
 
 ### Dashboard
-![Dashboard](public/Dashboard_light.jpeg)
-
-![Dashboard](public/Dashboard_dark.jpeg)
-
-![Insights](public/Insights_light1.jpeg)
-
-![Insights](public/Insights_light2.jpeg)
-
-![insights](public/Insights_dark1.jpeg)
-
-![insights](public/Insights_dark2.jpeg)
+<p align="center">
+<img src="public/Dashboard_light.jpeg" width="700">
+</p>
 
 ---
 
