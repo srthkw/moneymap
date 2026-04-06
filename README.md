@@ -1,5 +1,8 @@
 # 💰 MoneyMap — Finance Dashboard
 
+🚀[Live Demo](https://usemoneymap.vercel.app/)
+🖥️[GitHub Repo](https://github.com/srthkw/moneymap)
+
 A clean and interactive finance dashboard built to track transactions, visualize spending, and understand financial activity.
 
 ---
@@ -142,8 +145,37 @@ npm run dev
 ## 📷 Screenshots
 
 ### Dashboard
+
 <p align="center">
-<img src="public/Dashboard_light.jpeg" width="700">
+<img src="public/Dashboard_lightDesk.png" width="500">
+<img src="public/Dashboard_light.jpeg" width="200">
+</p>
+
+<p align="center">
+<img src="public/Dashboard_darkDesk.png" width="500">
+<img src="public/Dashboard_dark.jpeg" width="200">
+</p>
+
+### Insights
+
+<p align="center">
+<img src="public/Insights_lightDesk1.png" width="500">
+<img src="public/Insights_light1.jpeg" width="200">
+</p>
+
+<p align="center">
+<img src="public/Insights_lightDesk2.png" width="500">
+<img src="public/Insights_light2.jpeg" width="200">
+</p>
+
+<p align="center">
+<img src="public/Insights_darkDesk1.png" width="500">
+<img src="public/Insights_dark1.jpeg" width="200">
+</p>
+
+<p align="center">
+<img src="public/Insights_darkDesk2.png" width="500">
+<img src="public/Insights_dark2.jpeg" width="200">
 </p>
 
 ---
