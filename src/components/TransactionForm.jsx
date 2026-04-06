@@ -89,13 +89,13 @@ const TransactionForm = ({ setShowForm }) => {
       <div className={`flex flex-col items-start justify-start gap-1 w-full`}>
       <label htmlFor="category" className="font-semibold">Category</label>
       <select value={category} onChange={(e) => setCategory(e.target.value)} className={`${inputStyle.input}`}>
-        <option value="Food">Food</option>
-        <option value="Grocery">Grocery</option>
-        <option value="Education">Education</option>
-        <option value="Medical">Medical</option>
-        <option value="Shopping">Shopping</option>
-        <option value="Travel">Travel</option>
-        <option value="Other">Other</option>
+        <option value="food">Food</option>
+        <option value="grocery">Grocery</option>
+        <option value="education">Education</option>
+        <option value="medical">Medical</option>
+        <option value="shopping">Shopping</option>
+        <option value="travel">Travel</option>
+        <option value="other">Other</option>
       </select>
       </div>
 
