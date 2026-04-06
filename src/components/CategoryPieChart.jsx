@@ -100,7 +100,7 @@ const CategoryPieChart = () => {
                                                     style={{ backgroundColor: COLORS[index % COLORS.length] }}
                                                 ></div>
                                                 <span className={`font-semibold ${theme === "light" ? "text-gray-700" : "text-gray-200"}`}>
-                                                    {entry.name}
+                                                    {entry.name.charAt(0).toUpperCase() + entry.name.slice(1)}
                                                 </span>
                                             </div>
                                             <div className="flex items-center gap-4">
