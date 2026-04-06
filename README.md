@@ -159,22 +159,22 @@ npm run dev
 ### Insights
 
 <p align="center">
-<img src="public/Insights_lightDesk1.png" width="500">
+<img src="public/Insights_lightDesk1.png" width="700">
 <img src="public/Insights_light1.jpeg" width="200">
 </p>
 
 <p align="center">
-<img src="public/Insights_lightDesk2.png" width="500">
+<img src="public/Insights_lightDesk2.png" width="700">
 <img src="public/Insights_light2.jpeg" width="200">
 </p>
 
 <p align="center">
-<img src="public/Insights_darkDesk1.png" width="500">
+<img src="public/Insights_darkDesk1.png" width="700">
 <img src="public/Insights_dark1.jpeg" width="200">
 </p>
 
 <p align="center">
-<img src="public/Insights_darkDesk2.png" width="500">
+<img src="public/Insights_darkDesk2.png" width="700">
 <img src="public/Insights_dark2.jpeg" width="200">
 </p>
 
