@@ -7,8 +7,8 @@ const TransactionForm = ({ setShowForm }) => {
 
   const [title, setTitle] = useState("");
   const [amount, setAmount] = useState("");
-  const [type, setType] = useState("");
-  const [category, setCategory] = useState("");
+  const [type, setType] = useState("expense");
+  const [category, setCategory] = useState("food");
   const [date, setDate] = useState(
     new Date().toISOString().split("T")[0]
   );
@@ -30,8 +30,8 @@ const TransactionForm = ({ setShowForm }) => {
 
     setTitle("");
     setAmount("");
-    setType("");
-    setCategory("");
+    setType("expense");
+    setCategory("food");
     setDate(new Date().toISOString().split("T")[0]);
     setShowForm(false);
   };
@@ -90,6 +90,7 @@ const TransactionForm = ({ setShowForm }) => {
       <label htmlFor="category" className="font-semibold">Category</label>
       <select value={category} onChange={(e) => setCategory(e.target.value)} className={`${inputStyle.input}`}>
         <option value="Food">Food</option>
+        <option value="Grocery">Grocery</option>
         <option value="Education">Education</option>
         <option value="Medical">Medical</option>
         <option value="Shopping">Shopping</option>
