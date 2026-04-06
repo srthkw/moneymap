@@ -43,7 +43,7 @@ const Insights = () => {
                         <div className="flex items-center gap-2 mb-2">
                             <span className={`text-xs font-medium ${theme === "light" ? "text-orange-700" : "text-gray-200"} uppercase tracking-wide`}>Highest Spending</span>
                         </div>
-                        <p className={`text-lg font-bold ${theme === "light" ? "text-gray-800" : "text-gray-200"}`}>{highest?.name || "N/A"}</p>
+                        <p className={`text-lg font-bold ${theme === "light" ? "text-gray-800" : "text-gray-200"}`}>{highest?.name.split(" ").map((word) => word.charAt(0).toUpperCase() + word.slice(1)).join(" ") || "N/A"}</p>
                         <p className="text-2xl font-bold text-orange-600">₹{highest?.value || 0}</p>
                     </div>
 
