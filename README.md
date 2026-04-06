@@ -147,34 +147,34 @@ npm run dev
 ### Dashboard
 
 <p align="center">
-<img src="public/Dashboard_lightDesk.png" width="500">
+<img src="public/Dashboard_lightDesk.png" width="800">
 <img src="public/Dashboard_light.jpeg" width="200">
 </p>
 
 <p align="center">
-<img src="public/Dashboard_darkDesk.png" width="500">
+<img src="public/Dashboard_darkDesk.png" width="800">
 <img src="public/Dashboard_dark.jpeg" width="200">
 </p>
 
 ### Insights
 
 <p align="center">
-<img src="public/Insights_lightDesk1.png" width="700">
+<img src="public/Insights_lightDesk1.png" width="800">
 <img src="public/Insights_light1.jpeg" width="200">
 </p>
 
 <p align="center">
-<img src="public/Insights_lightDesk2.png" width="700">
+<img src="public/Insights_lightDesk2.png" width="800">
 <img src="public/Insights_light2.jpeg" width="200">
 </p>
 
 <p align="center">
-<img src="public/Insights_darkDesk1.png" width="700">
+<img src="public/Insights_darkDesk1.png" width="800">
 <img src="public/Insights_dark1.jpeg" width="200">
 </p>
 
 <p align="center">
-<img src="public/Insights_darkDesk2.png" width="700">
+<img src="public/Insights_darkDesk2.png" width="800">
 <img src="public/Insights_dark2.jpeg" width="200">
 </p>
 
