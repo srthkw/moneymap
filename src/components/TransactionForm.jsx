@@ -7,8 +7,8 @@ const TransactionForm = ({ setShowForm }) => {
 
   const [title, setTitle] = useState("");
   const [amount, setAmount] = useState("");
-  const [type, setType] = useState("Expense");
-  const [category, setCategory] = useState("Food");
+  const [type, setType] = useState("");
+  const [category, setCategory] = useState("");
   const [date, setDate] = useState(
     new Date().toISOString().split("T")[0]
   );
@@ -30,8 +30,8 @@ const TransactionForm = ({ setShowForm }) => {
 
     setTitle("");
     setAmount("");
-    setType("Expense");
-    setCategory("Food");
+    setType("");
+    setCategory("");
     setDate(new Date().toISOString().split("T")[0]);
     setShowForm(false);
   };
